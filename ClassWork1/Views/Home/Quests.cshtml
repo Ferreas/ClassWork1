@@ -1,0 +1,30 @@
+﻿<h2>Анкета</h2>
+<div class="QuestSection">
+    <form class="QuestContainer" method="POST">
+
+        <div class="QuestNode">
+            <label for="username">Имя пользователя:</label>
+            </br>
+            <input name="name" class="QuestTextbox" />
+        </div>
+
+        <div class="QuestNode">
+            <label>Пол:</label>
+            <br />
+            <input type="radio" name="gender" value="Мужской" checked> Мужской
+            <input type="radio" name="gender" value="Женский"> Женский
+        </div>
+
+        <div class="QuestNode">
+            <label>Любимое животное:</label>
+            <br />
+            <input type="checkbox" name="pet" value="Собака" checked> Собака
+            <input type="checkbox" name="pet" value="Кот"> Кот
+            <input type="checkbox" name="pet" value="Попугай"> Попугай
+        </div>
+        <div>
+            <input name="submit" class="FeedbackButton" type="submit" value="Отправить" />
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,242 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header/Logo Title */
+.header {
+    height: 80px;
+    background: #1abc9c;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.HeaderText {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+    line-height: 60px;
+}
+
+.PicPlaceHolder {
+    height: 60px;
+    width: 60px;
+    background-color: #555;
+    float: right;
+    font-size: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/* ==================================== */
+
+/* body + menu */
+.MyMenuAndMain {
+    margin: auto;
+    width: 80%;
+    position: relative;
+    display: flex;
+    background-color: lightgray;
+    padding-left: 10px;
+    min-height: 100vh;
+}
+
+.MyMenu {
+    width: 350px;
+    flex-shrink: 0;
+    margin: 0 0 0 auto;
+}
+
+.MyMain {
+    width: 100%;
+}
+
+li.Right {
+    text-align: right;
+}
+/* ==================================== */
+footer {
+    height: 70px;
+    background-color: grey;
+    position: page;
+    bottom: 0;
+    width: 100%;
+}
+
+    footer a {
+        float: right;
+        margin-right: 10px;
+    }
+
+    footer p {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        line-height: 70px;
+        margin: 0;
+    }
+/*=================================*/
+
+
+/* feedback section */
+.FeedbackSection {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    height: 610px;
+}
+
+.FeedbackContainer {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+    .FeedbackContainer::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .FeedbackContainer img {
+        float: left;
+        margin-right: 20px;
+        border-radius: 20%;
+        height: 60px;
+        width: 60px;
+        background-color: grey;
+    }
+
+    .FeedbackContainer span {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+
+/* ============================= */
+
+.FeedbackForm {
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 5px;
+    background: RGBA(255,255,255,1);
+}
+
+textarea {
+    resize: none;
+}
+
+.FeedbackTextbox {
+    height: 50px;
+    width: 40%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 2px solid;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+    .FeedbackMessage:focus,
+    .FeedbackTextbox:focus {
+        outline: none;
+        border: rgba(24,149,215,1) 2px solid;
+        color: rgba(24,149,215,1);
+    }
+
+.FeedbackMessage {
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 120px;
+    border: rgba(0,0,0,.3) 2px solid;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.FeedbackButton {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 0px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #1abc9c;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    transition: background .4s;
+    cursor: pointer;
+}
+/* ============================= */
+.ArticleSection {
+    position: relative;
+    width: 100%;
+}
+
+.ArticleContainer {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.ArticleDate {
+    text-align: right;
+}
+/* ============================= */
+
+.QuestSection {
+    position: relative;
+    width: 100%;
+}
+
+.QuestContainer {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+.QuestTextbox {
+    height: 30px;
+    width: 40%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 2px solid;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.QuestNode {
+    margin-bottom:25px;
+}
+
+/*==========================*/
+.AnswersSection {
+    position: relative;
+    width: 100%;
+}
+
+.AnswersContainer {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    list-style-position: inside;
+}

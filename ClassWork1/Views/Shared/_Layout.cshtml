@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+<body>
+    <div class="header" id="hTop">
+        <div class="HeaderText">Мой Блог<img class="PicPlaceHolder" src="~/Content/Images/CatImg.PNG" alt="Logo"></div>
+
+    </div>
+    <div class="MyMenuAndMain">
+        <div class="MyMain">
+            @RenderBody()
+        </div>
+
+        <ul class="nav nav-pills nav-stacked MyMenu">
+            <li class="active Right">@Html.ActionLink("Главная", "Index", "Home")</li>
+            <li class="Right">@Html.ActionLink("Гостевая", "Feedback", "Home")</li>
+            <li class="Right">@Html.ActionLink("Анкета", "Quests", "Home")</li>
+        </ul>
+    </div>
+    <footer class="foot">
+        <p>&copy;Work By Danil Biletchenko<a href="#hTop">back to top</a></p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
