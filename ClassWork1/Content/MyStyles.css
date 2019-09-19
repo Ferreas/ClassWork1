@@ -1,6 +1,6 @@
 ﻿body {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* Header/Logo Title */
@@ -52,7 +52,7 @@
     width: 100%;
 }
 
-li.Right {
+Right {
     text-align: right;
 }
 /* ==================================== */
@@ -124,7 +124,7 @@ footer {
     box-sizing: border-box;
     padding: 40px;
     border-radius: 5px;
-    background: RGBA(255,255,255,1);
+    background: RGB(255,255,255);
 }
 
 textarea {
@@ -135,7 +135,7 @@ textarea {
     height: 50px;
     width: 40%;
     border-radius: 3px;
-    border: rgba(0,0,0,.3) 2px solid;
+    border: rgb(0,0,0) 2px solid;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -146,15 +146,15 @@ textarea {
     .FeedbackMessage:focus,
     .FeedbackTextbox:focus {
         outline: none;
-        border: rgba(24,149,215,1) 2px solid;
-        color: rgba(24,149,215,1);
+        border: rgb(24,149,215) 2px solid;
+        color: rgb(24,149,215);
     }
 
 .FeedbackMessage {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgb(255, 255, 255);
     width: 100%;
     height: 120px;
-    border: rgba(0,0,0,.3) 2px solid;
+    border: rgb(0,0,0) 2px solid;
     box-sizing: border-box;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -169,7 +169,7 @@ textarea {
     height: 50px;
     width: 100%;
     border-radius: 3px;
-    border: rgba(0,0,0,.3) 0px solid;
+    border: rgb(0,0,0) 0 solid;
     box-sizing: border-box;
     padding: 10px;
     background: #1abc9c;
@@ -215,7 +215,7 @@ textarea {
     height: 30px;
     width: 40%;
     border-radius: 3px;
-    border: rgba(0,0,0,.3) 2px solid;
+    border: rgb(0,0,0) 2px solid;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
