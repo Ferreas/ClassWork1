@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,13 +9,16 @@ namespace ClassWork1.Controllers
 {
     public class HomeController : Controller
     {
+        SystemContext _db = new SystemContext();
         public ActionResult Index()
         {
+            ViewBag.Art = _db.Articles.ToList();
             return View();
         }
 
         public ActionResult Feedback()
         {
+            ViewBag.Com = _db.Comments.ToList();
             return View();
         }
  
